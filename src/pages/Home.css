@@ -1,0 +1,12 @@
+.home-slogan {
+    height: 95vh;
+    padding-left: 7%;
+}
+
+.home-slogan-text {
+    margin-top: 30%;
+    font-size: 32px;
+    width: 420px;
+    font-family: 'Raleway Dots';
+    word-wrap: break-word;
+}
