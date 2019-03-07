@@ -36,6 +36,7 @@ header {
     transform: scale(1.8, 1.8);
     transform-origin: left;
     font-family: 'Raleway Thin';
+    user-select: none;
 }
 
 .header-title-small {
