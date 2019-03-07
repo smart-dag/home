@@ -1,0 +1,47 @@
+header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 7%;
+    padding-right: 7%;
+    top: 0;
+
+    transition: all 0.5s;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.header-shadow {
+    -webkit-box-shadow:0 2px 13px rgba(0,0,0,.04);
+    -moz-box-shadow:0 2px 13px rgba(0,0,0,.04);
+    box-shadow:0 2px 13px rgba(0,0,0,.04);
+    
+    transition: all 0.5s;
+}
+
+.header-title {
+    transform: scale(1.5, 1.5);
+    transform-origin: left;
+}
+
+.header-title-small {
+    transform: scale(1.2, 1.2) !important;
+    transform-origin: left;
+}
+
+.header-links {
+    display: flex;
+    position: relative;
+}
+
+.header-links a {
+    text-transform: uppercase;
+    color: #555;
+    margin-left: 12px;
+    margin-right: 12px;
+}
