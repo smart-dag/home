@@ -35,7 +35,7 @@ export default class Header extends React.Component {
                 <div ref={e => this.title = e as HTMLDivElement} className='header-title'>SDAG</div>
                 <div className='header-links'>
                     <a href="#">WhitePaper</a>
-                    <a href="#">Developer</a>
+                    <a href="#">Developers</a>
                     <a href="#">Products</a>
                     <a href="#">About</a>
                 </div>

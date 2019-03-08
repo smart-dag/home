@@ -11,10 +11,29 @@
     word-wrap: break-word;
 }
 
+.home-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    color: black;
+    font-weight: 100;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    text-align: center;
+    font-family: 'Raleway Thin';
+}
+
 .home-intro {
-    height: 50vh;
-    background-color: black;
-    color: white;
+    background-color: #f8f8f8;
+}
+
+.home-intro-title {
+    font-size: 36px;
+    font-family: 'Raleway Thin';
+    margin-bottom: 52px;
 }
 
 .home-intro div {
@@ -24,6 +43,7 @@
 
 .home-intro img {
     display: block;
+    margin: auto;
 }
 
 .home-intro-items {
@@ -33,4 +53,22 @@
     display: flex;
     align-items: center;
     justify-content: space-around !important;
+}
+
+.home-intro-item-title {
+    margin-top: 8px;
+    font-family: 'Raleway Thin';
+    font-size: 16px;
+    color: rgb(24, 123, 252);
+}
+
+.home-intro-whitepaper {
+    margin-top: 32px;
+}
+
+.home-intro-whitepaper a {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Raleway Thin';
+    color: #222;
 }
