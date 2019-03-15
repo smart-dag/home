@@ -4,6 +4,7 @@ import './Home.css';
 import thunder from '../assets/thunder.svg';
 import scalable from '../assets/scalable.svg';
 import usable from '../assets/usable.svg';
+import github from '../assets/github-logo.svg';
 
 export default class Home extends React.Component {
 
@@ -40,9 +41,28 @@ export default class Home extends React.Component {
                 <div id='developers' className='home-developers home-section'>
                     <div className='home-intro-title'>Developers</div>
 
-                    <div>
+                    <div style={{ marginBottom: 24 }}>
                         We developed user-friendly API libraries for developers. With these tools, you can quickly develop dApps based on SDAG.
                     </div>
+
+                    <div>
+                        At this moment, you can use these libs to rapidly develop dApps:
+
+                        <div style={{ marginTop: 12 }}>
+                            <a href="https://github.com" title='SDAG Javascript SDK'>SDAG.js</a>
+                            <a href="https://github.com" title='User-friendly APIs for rapid dApp development'>SDAGWallet.js</a>
+                        </div>
+                    </div>
+
+                    <div style={{ marginTop: 24 }}>
+                        <div>
+                            <a href="https://github.com"><img src={github} /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='products' className='home-developers home-section'>
+                    <div className='home-intro-title'>Products</div>
                 </div>
             </div>
         );
