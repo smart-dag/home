@@ -5,6 +5,8 @@ import thunder from '../assets/thunder.svg';
 import scalable from '../assets/scalable.svg';
 import usable from '../assets/usable.svg';
 import github from '../assets/github-logo.svg';
+import telescope from '../assets/telescope.svg';
+import wallet from '../assets/wallet.svg';
 
 export default class Home extends React.Component {
 
@@ -15,7 +17,7 @@ export default class Home extends React.Component {
                     <div className='home-slogan-text'>Building a smarter world bases on SDAG</div>
                 </div>
 
-                <div id='whitepaper' className='home-intro home-section '>
+                <div id='whitepaper' className='bk-intro home-section '>
                     <div className='home-intro-title'>Advantages</div>
 
                     <div className='home-intro-items'>
@@ -61,8 +63,21 @@ export default class Home extends React.Component {
                     </div>
                 </div>
 
-                <div id='products' className='home-developers home-section'>
+                <div id='products' className='home-developers home-section bk-intro'>
                     <div className='home-intro-title'>Products</div>
+
+                    <div>We have developed some apps based on SDAG, let's have a try!
+                    <div className='home-intro-items' style={{ marginTop: 48, justifyContent: 'center' }}>
+                            <div style={{ marginRight: 96 }}>
+                                <img src={telescope} />
+                                <div className='home-intro-item-title'>Explorer</div>
+                            </div>
+                            <div>
+                                <img src={wallet} />
+                                <div className='home-intro-item-title'>Wallet</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
