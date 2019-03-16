@@ -1,0 +1,101 @@
+.app-footer {
+    display: grid;
+    width: 100%;
+    color: black;
+    /* background: #082656; */
+    padding-top: 42px;
+    padding-bottom: 22px;
+    grid-template-columns: 40px auto auto auto auto auto 40px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". copyright products developers team misc .";
+    grid-column-gap: 12px;
+    justify-items: start;
+    font-family: 'Raleway Thin';
+}
+
+.app-footer a {
+  text-decoration: none; 
+  margin: 0;
+  color: black;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+.app-footer a:hover::before {
+    visibility: collapse;
+}
+
+.app-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.app-footer li {
+  text-align: start;
+}
+
+@media only screen and (max-width: 640px) {
+    .app-footer {
+        display: grid;
+        grid-template-columns: 24px auto auto auto auto auto 24px;
+    }
+}
+
+.app-footer-copyright {
+    grid-area: copyright;
+    margin-left: -8px;
+}
+
+.app-footer-products {
+    grid-area: products;
+}
+
+.app-footer-team {
+    grid-area: team;
+}
+
+.app-footer-developers {
+    grid-area: developers;
+}
+
+.app-footer-misc {
+    grid-area: misc;
+}
+
+.app-footer ul li {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.app-footer svg {
+    fill: black;
+    margin-right: 8px;
+}
+
+.app-footer-title {
+    text-align: start;
+    font-size: 16px;
+    font-family: Roboto,"Helvetica Neue",Helvetica,"Hiragino Sans GB",STHeitiSC-Light,"Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+
+@media only screen and (max-width: 520px) {
+    .app-footer-products {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .app-footer-team {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .app-footer-developers {
+        display: none;
+    }
+}

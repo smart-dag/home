@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import { Header } from './components';
+import { Header ,Footer} from './components';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import { Home } from './pages';
 
@@ -14,6 +14,8 @@ class App extends React.Component {
           <Switch>
             <Route path='/' component={Home} />
           </Switch>
+
+          <Footer />
         </div>
       </Router>
     );
