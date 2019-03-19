@@ -1,10 +1,16 @@
 import * as React from 'react';
 import './Header.css';
+import HamburgerMenu from 'react-hamburger-menu';
 
-export default class Header extends React.Component {
+interface HeaderState {
+    isOpen: boolean;
+}
+
+export default class Header extends React.Component<any, HeaderState>{
 
     private header: HTMLHeadElement;
     private title: HTMLDivElement;
+    state: HeaderState = { isOpen: false };
 
     componentDidMount() {
         window.addEventListener('scroll', ev => this.onScroll(ev));
@@ -39,6 +45,21 @@ export default class Header extends React.Component {
                     <a href="#">Products</a>
                     <a href="#">About</a>
                 </div>
+
+                <div id='menu'>
+                    <HamburgerMenu
+                        isOpen={this.state.isOpen}
+                        menuClicked={() => { this.setState({ isOpen: !this.state.isOpen }) }}
+                        width={18}
+                        height={15}
+                        strokeWidth={1}
+                        rotate={0}
+                        color='black'
+                        borderRadius={0}
+                        animationDuration={0.5}
+                    />
+                </div>
+
             </header>
         );
     }

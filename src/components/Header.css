@@ -56,9 +56,17 @@ header {
     margin-right: 12px;
 }
 
+#menu {
+    display: none;
+}
 
 @media only screen and (max-width: 520px) {
     .header-links {
         display: none;
     }
+
+    #menu {
+        display: block;
+    }
 }
+
