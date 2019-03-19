@@ -11,10 +11,10 @@ export default class Footer extends React.Component {
                     <div className='logo-font' style={{ fontSize: 32, textAlign: 'start' }}> <span style={{ color: 'black', textDecoration: 'none' }}>SDAG.io</span> </div>
                     <div style={{ fontSize: 10, textAlign: 'start' }}>&copy; SDAG 2019. All Rights Reserved</div>
                     <div style={{ textAlign: 'start', marginTop: 4 }}>
-                        <a href="https://twitter.com" style={{}}><SocalIcon icon='twitter-alt' size={18} /></a>
-                        <a href="https://t.me/" style={{}}><SocalIcon icon='telegram' size={18} /></a>
-                        <a href="https://medium.com" style={{}}><SocalIcon icon='medium' size={18} /></a>
-                        <a href="https://github.com/sdagio" style={{}}><SocalIcon icon='github' size={18} /></a>
+                        <a className='icon' href="https://twitter.com" style={{}}><SocalIcon icon='twitter-alt' size={18} /></a>
+                        <a className='icon' href="https://t.me/" style={{}}><SocalIcon icon='telegram' size={18} /></a>
+                        <a className='icon' href="https://medium.com" style={{}}><SocalIcon icon='medium' size={18} /></a>
+                        <a className='icon' href="https://github.com/sdagio" style={{}}><SocalIcon icon='github' size={18} /></a>
                     </div>
                 </div>
 

@@ -70,11 +70,11 @@ export default class Home extends React.Component {
                     <div className='home-intro-items' style={{ marginTop: 48, justifyContent: 'center' }}>
                             <div style={{ marginRight: 96 }}>
                                 <img src={telescope} />
-                                <div className='home-intro-item-title'>Explorer</div>
+                                <div className='home-intro-item-title'><a href="https://explorer.sdag.io">Explorer</a></div>
                             </div>
                             <div>
                                 <img src={wallet} />
-                                <div className='home-intro-item-title'>Wallet</div>
+                                <div className='home-intro-item-title'><a href="https://wallet.sdag.io">Wallet</a></div>
                             </div>
                         </div>
                     </div>

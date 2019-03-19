@@ -2,7 +2,6 @@
     display: grid;
     width: 100%;
     color: black;
-    /* background: #082656; */
     padding-top: 42px;
     padding-bottom: 22px;
     grid-template-columns: 40px auto auto auto auto auto 40px;
@@ -20,13 +19,35 @@
   color: black;
 }
 
-.app-footer a:hover {
+.app-footer a.icon:hover {
   text-decoration: underline;
 }
 
-.app-footer a:hover::before {
+.app-footer a.icon:hover::before {
     visibility: collapse;
 }
+
+.app-footer a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(24, 123, 252);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+.app-footer a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+  
 
 .app-footer ul {
   list-style: none;
@@ -51,6 +72,7 @@
 
 .app-footer-products {
     grid-area: products;
+    margin-left: 32px;
 }
 
 .app-footer-team {
@@ -81,12 +103,12 @@
     font-family: Roboto,"Helvetica Neue",Helvetica,"Hiragino Sans GB",STHeitiSC-Light,"Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 
-
+/* 
 @media only screen and (max-width: 520px) {
     .app-footer-products {
         display: none;
     }
-}
+} */
 
 @media only screen and (max-width: 640px) {
     .app-footer-team {

@@ -18,7 +18,7 @@ header {
 
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.85);
 
     height: 48px;
 }
@@ -54,4 +54,11 @@ header {
     color: #555;
     margin-left: 12px;
     margin-right: 12px;
+}
+
+
+@media only screen and (max-width: 520px) {
+    .header-links {
+        display: none;
+    }
 }
