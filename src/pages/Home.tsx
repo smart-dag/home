@@ -53,6 +53,7 @@ export default class Home extends React.Component {
                         <div style={{ marginTop: 12 }}>
                             <a href="https://github.com" title='SDAG Javascript SDK'>SDAG.js</a>
                             <a href="https://github.com" title='User-friendly APIs for rapid dApp development'>SDAGWallet.js</a>
+                            <a href="https://github.com/smart-dag/docs/tree/master/start-docker">Docker</a>
                         </div>
                     </div>
 
