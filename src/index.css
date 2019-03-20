@@ -6,6 +6,7 @@ body {
 
 div {
   transition: all 0.5s;
+  position: relative;
 }
 
 a {
