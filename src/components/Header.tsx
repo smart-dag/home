@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './Header.css';
 import HamburgerMenu from 'react-hamburger-menu';
+import logo from '../assets/logo.png';
 
 interface HeaderState {
     isOpen: boolean;
@@ -55,7 +56,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState>{
     render() {
         return (
             <header ref={e => this.header = e as HTMLHeadElement} style={{ backgroundColor: this.state.isOpen ? 'rgba(0, 0, 0, 0)' : 'rgba(255, 255, 255, 0.85)' }}>
-                <div ref={e => this.title = e as HTMLDivElement} className='header-title'>SDAG</div>
+                <div ref={e => this.title = e as HTMLDivElement} className='header-title'><img src={logo} alt="Logo" style={{ width: 24, height: 30 }} /></div>
                 <div className='header-links'>
                     <a href="#whitepaper">WhitePaper</a>
                     <a href="#developers">Developers</a>
