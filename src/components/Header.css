@@ -8,6 +8,7 @@ header {
     top: 0;
 
     transition: all 0.5s;
+    color: white;
 
     display: flex;
     justify-content: space-between;
@@ -51,7 +52,7 @@ header {
 
 .header-links a {
     text-transform: uppercase;
-    color: #555;
+    color: white;
     margin-left: 12px;
     margin-right: 12px;
 }

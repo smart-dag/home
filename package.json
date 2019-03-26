@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "d3": "^5.9.2",
     "jquery": "^3.3.1",
+    "jsnetworkx": "^0.3.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-hamburger-menu": "^1.1.1",
     "react-parallax": "^2.2.0",
+    "react-particles-js": "^2.5.1",
     "react-router-dom": "^4.3.1",
     "react-scripts-ts": "3.1.0",
+    "react-water-wave": "^1.0.3",
     "social-logos": "^2.0.0",
     "three": "^0.102.1"
   },

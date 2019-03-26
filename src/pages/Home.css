@@ -1,6 +1,15 @@
 .home-slogan {
     height: 90vh;
     padding-left: 7%;
+    position: relative;
+}
+
+#particles{
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    background: aqua;
 }
 
 .home-slogan-text {
@@ -9,6 +18,7 @@
     width: 420px;
     font-family: 'Raleway Dots';
     word-wrap: break-word;
+    color: white;
 }
 
 .home-section {

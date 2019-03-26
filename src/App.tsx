@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import { Home } from './pages';
 import HamburgerMenu from 'react-hamburger-menu';
 import * as jQuery from 'jquery';
+import Particles from 'react-particles-js';
 
 class App extends React.Component {
 
@@ -23,6 +24,7 @@ class App extends React.Component {
     return (
       <Router >
         <div className='App'>
+          <div id='bk' style={{ position: 'absolute', top: 0, left: 0, right: 0, height:'100vh' }}></div>
           <Header ref={e => this.header = e!} onMenuOpen={() => this.openMenu()} onMenuClose={() => this.closeMenu()} />
 
           <Switch>
