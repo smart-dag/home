@@ -57,6 +57,10 @@ header {
     margin-right: 12px;
 }
 
+.header-links a.black{
+    color: black;
+}
+
 #menu {
     display: none;
 }
