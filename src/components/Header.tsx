@@ -2,9 +2,11 @@ import * as React from 'react';
 import './Header.css';
 import HamburgerMenu from 'react-hamburger-menu';
 import logo from '../assets/logo.png';
+import logow from '../assets/logo-w.png';
 
 interface HeaderState {
-    isOpen: boolean;
+    isOpen?: boolean;
+    notAtTop?: boolean;
 }
 
 interface HeaderProps {
@@ -16,7 +18,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState>{
 
     private header: HTMLHeadElement;
     private title: HTMLDivElement;
-    state: HeaderState = { isOpen: false };
+    state: HeaderState = { isOpen: false, notAtTop: false };
 
     componentDidMount() {
         window.addEventListener('scroll', ev => this.onScroll(ev));
@@ -38,6 +40,8 @@ export default class Header extends React.Component<HeaderProps, HeaderState>{
         const shadowClass = 'header-shadow';
         const titleScaleClass = 'header-title-small';
 
+        this.setState({ notAtTop: window.scrollY > window.innerHeight * 0.95 });
+
         if (window.scrollY <= 0) {
             this.header.classList.remove(shadowClass)
             this.title.classList.remove(titleScaleClass)
@@ -51,12 +55,14 @@ export default class Header extends React.Component<HeaderProps, HeaderState>{
         if (!this.title.classList.contains(titleScaleClass)) {
             this.title.classList.add(titleScaleClass);
         }
+
+
     }
 
     render() {
         return (
-            <header ref={e => this.header = e as HTMLHeadElement} style={{ backgroundColor: this.state.isOpen ? 'rgba(0, 0, 0, 0)' : 'rgba(0, 0, 0, 0)' }}>
-                <div ref={e => this.title = e as HTMLDivElement} className='header-title'><img src={logo} alt="Logo" style={{ width: 24, height: 30 }} /></div>
+            <header ref={e => this.header = e as HTMLHeadElement} style={{ backgroundColor: this.state.notAtTop ? 'rgba(255,255, 255, 0.85)' : 'rgba(0, 0, 0, 0)' }}>
+                <div ref={e => this.title = e as HTMLDivElement} className='header-title'><img src={this.state.notAtTop ? logo : logow} alt="Logo" style={{ width: 30, height: 30 }} /></div>
                 <div className='header-links'>
                     <a href="#whitepaper">WhitePaper</a>
                     <a href="#developers">Developers</a>
