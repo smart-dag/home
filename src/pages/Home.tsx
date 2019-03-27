@@ -54,8 +54,8 @@ export default class Home extends React.Component {
                         At this moment, you can use these libs to rapidly develop dApps:
 
                         <div style={{ marginTop: 12 }}>
-                            <a href="https://github.com" title='SDAG Javascript SDK'>SDAG.js</a>
-                            <a href="https://github.com" title='User-friendly APIs for rapid dApp development'>SDAGWallet.js</a>
+                            <a href="https://github.com/smart-dag/sdag.js" title='SDAG Javascript SDK'>SDAG.js</a>
+                            <a href="https://github.com/smart-dag/sdagwallet.js" title='User-friendly APIs for rapid dApp development'>SDAGWallet.js</a>
                             <a href="https://github.com/smart-dag/docs/tree/master/start-docker">Docker</a>
                         </div>
                     </div>
