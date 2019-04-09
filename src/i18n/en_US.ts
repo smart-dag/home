@@ -1,14 +1,25 @@
 export default {
-    app: {
-
+    advantages: {
+        title: 'Advantages',
+        fast: 'Fast',
+        scalable: 'Scalable',
+        usable: 'Usable',
+        whitepaper: 'Whitepaper',
     },
-
-    header: {
-        search: {
-            placeholder: 'Search Unit/Address/MCI...',
-        },
+    developers: {
+        title: 'Developers',
+        desc: 'We developed user-friendly API libraries for developers. With these tools, you can quickly develop dApps based on SDAG.',
+        sdkDesc: 'At this moment, you can use these libs to rapidly develop dApps:',
     },
-
+    products: {
+        title: 'Products',
+        desc: `We have developed some apps based on SDAG, let's have a try!`,
+        explorer: 'Explorer',
+        wallet: 'Wallet',
+    },
+    about: {
+        title: 'About',
+    },
     footer: {
         products: {
             title: 'Products',
@@ -24,56 +35,5 @@ export default {
             title: 'Developers',
             docs: 'Documents',
         },
-
-        misc: {
-            lang: 'Languages',
-        },
     },
-
-    home: {
-        overview: {
-            mci: 'Main Chain Index',
-            peers: 'Peers',
-            tps: 'TPS',
-            price: 'Price',
-        },
-
-        activity: {
-            title: 'Recent Activity',
-            unit: 'Unit',
-            mci: 'MCI',
-            from: 'From',
-            to: 'To',
-            amount: 'Amount',
-            time: 'Time',
-        },
-    },
-
-    address: {
-        title: 'Address',
-
-        overview: {
-            title: 'Overview',
-            balance: 'Balance',
-            txns: 'Transactions',
-        },
-
-        txs: {
-            tabs: {
-                transactions: 'Transactions',
-                misc: 'Misc',
-            },
-
-
-        }
-    },
-
-    unit: {
-        title: 'Unit',
-    },
-
-    mci: {
-        title: 'MCI',
-        joints: 'Joints',
-    }
 };

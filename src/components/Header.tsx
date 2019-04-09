@@ -21,7 +21,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState>{
     state: HeaderState = { isOpen: false, notAtTop: false };
 
     componentDidMount() {
-        window.addEventListener('scroll', ev => this.onScroll(ev));
+        window.addEventListener('scroll', _ => this.onScroll());
     }
 
     private toggleMenu() {
@@ -36,7 +36,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState>{
         if (this.props.onMenuClose) this.props.onMenuClose();
     }
 
-    private onScroll(ev: UIEvent) {
+    private onScroll() {
         const shadowClass = 'header-shadow';
         const titleScaleClass = 'header-title-small';
 
