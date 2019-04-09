@@ -4,7 +4,7 @@ import zh_CN from './zh_CN';
 let locale = navigator.language;
 
 const langs = {
-    'en-US': zh_CN,
+    'en-US': en_US,
     'zh-CN': zh_CN
 }
 
