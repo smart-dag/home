@@ -1,79 +1,40 @@
 export default {
-    app: {
-
+    advantages: {
+        title: 'SDAG 优势',
+        fast: '快速',
+        scalable: '可扩展',
+        usable: '易用',
+        whitepaper: '白皮书',
     },
-
-    header: {
-        search: {
-            placeholder: 'Search Unit/Address/MCI...',
-        },
+    developers: {
+        title: '开发者',
+        desc: '我们为开发者提供了用户接口友好的API库，通过使用这些库，开发者可以快速构建基于SDAG的dApps',
+        sdkDesc: '此刻，你能使用这些工具快速构建dApp',
     },
-
+    products: {
+        title: '产品',
+        desc: `我们目前提供以下产品给用户使用`,
+        explorer: 'SDAG 浏览器',
+        wallet: '在线钱包',
+    },
+    about: {
+        title: '关于',
+    },
     footer: {
         products: {
-            title: 'Products',
-            sdag_explorer: 'SDAG Explorer'
+            title: '产品',
+            sdag_explorer: 'SDAG 浏览器',
+            wallet: '在线钱包'
         },
 
         team: {
-            title: 'Team',
-            about: 'About Us',
+            title: '团队',
+            about: '关于我们',
         },
 
         developers: {
-            title: 'Developers',
-            docs: 'Documents',
-        },
-
-        misc: {
-            lang: 'Languages',
+            title: '开发者',
+            docs: '文档',
         },
     },
-
-    home: {
-        overview: {
-            mci: 'Main Chain Index',
-            peers: 'Peers',
-            tps: 'TPS',
-            price: 'Price',
-        },
-
-        activity: {
-            title: 'Recent Activity',
-            unit: 'Unit',
-            mci: 'MCI',
-            from: 'From',
-            to: 'To',
-            amount: 'Amount',
-            time: 'Time',
-        },
-    },
-
-    address: {
-        title: 'Address',
-
-        overview: {
-            title: 'Overview',
-            balance: 'Balance',
-            txns: 'Transactions',
-        },
-
-        txs: {
-            tabs: {
-                transactions: 'Transactions',
-                misc: 'Misc',
-            },
-
-
-        }
-    },
-
-    unit: {
-        title: 'Unit',
-    },
-
-    mci: {
-        title: 'MCI',
-        joints: 'Joints',
-    }
 };

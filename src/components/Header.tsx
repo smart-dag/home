@@ -3,6 +3,7 @@ import './Header.css';
 import HamburgerMenu from 'react-hamburger-menu';
 import logo from '../assets/logo.png';
 import logow from '../assets/logo-w.png';
+import i18n from '../i18n';
 
 interface HeaderState {
     isOpen?: boolean;
@@ -64,10 +65,10 @@ export default class Header extends React.Component<HeaderProps, HeaderState>{
             <header ref={e => this.header = e as HTMLHeadElement} style={{ backgroundColor: this.state.notAtTop ? 'rgba(255,255, 255, 0.85)' : 'rgba(0, 0, 0, 0)' }}>
                 <div ref={e => this.title = e as HTMLDivElement} className='header-title'><img src={this.state.notAtTop ? logo : logow} alt="Logo" style={{ width: 30, height: 30 }} /></div>
                 <div className='header-links'>
-                    <a href="#whitepaper" className={this.state.notAtTop ? 'black' : ''}>WhitePaper</a>
-                    <a href="#developers" className={this.state.notAtTop ? 'black' : ''}>Developers</a>
-                    <a href="#products" className={this.state.notAtTop ? 'black' : ''}>Products</a>
-                    <a href="#about" className={this.state.notAtTop ? 'black' : ''}>About</a>
+                    <a href="#whitepaper" className={this.state.notAtTop ? 'black' : ''}>{i18n.advantages.whitepaper}</a>
+                    <a href="#developers" className={this.state.notAtTop ? 'black' : ''}>{i18n.developers.title}</a>
+                    <a href="#products" className={this.state.notAtTop ? 'black' : ''}>{i18n.products.title}</a>
+                    <a href="#about" className={this.state.notAtTop ? 'black' : ''}>{i18n.about.title}</a>
                 </div>
 
                 <div id='menu'>

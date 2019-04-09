@@ -10,6 +10,7 @@ import github from '../assets/github-logo.svg';
 import telescope from '../assets/telescope.svg';
 import wallet from '../assets/wallet.svg';
 
+import i18n from '../i18n';
 
 export default class Home extends React.Component {
 
@@ -21,37 +22,37 @@ export default class Home extends React.Component {
                 </div>
 
                 <div id='whitepaper' className='bk-intro home-section '>
-                    <div className='home-intro-title'>Advantages</div>
+                    <div className='home-intro-title'>{i18n.advantages.title}</div>
 
                     <div className='home-intro-items'>
                         <div>
                             <img src={thunder} />
-                            <div className='home-intro-item-title'>Fast</div>
+                            <div className='home-intro-item-title'>{i18n.advantages.fast}</div>
                         </div>
                         <div>
                             <img src={scalable} />
-                            <div className='home-intro-item-title'>Scalable</div>
+                            <div className='home-intro-item-title'>{i18n.advantages.scalable}</div>
                         </div>
                         <div>
                             <img src={usable} />
-                            <div className='home-intro-item-title'>Usable</div>
+                            <div className='home-intro-item-title'>{i18n.advantages.usable}</div>
                         </div>
                     </div>
 
                     <div className='home-intro-whitepaper'>
-                        <a href="#">Whitepaper</a>
+                        <a href="#">{i18n.advantages.whitepaper}</a>
                     </div>
                 </div>
 
                 <div id='developers' className='home-developers home-section'>
-                    <div className='home-intro-title'>Developers</div>
+                    <div className='home-intro-title'>{i18n.developers.title}</div>
 
                     <div style={{ marginBottom: 24 }}>
-                        We developed user-friendly API libraries for developers. With these tools, you can quickly develop dApps based on SDAG.
+                        {i18n.developers.desc}
                     </div>
 
                     <div>
-                        At this moment, you can use these libs to rapidly develop dApps:
+                        {i18n.developers.sdkDesc}
 
                         <div style={{ marginTop: 12 }}>
                             <a href="https://github.com/smart-dag/sdag.js" title='SDAG Javascript SDK'>SDAG.js</a>
@@ -68,17 +69,17 @@ export default class Home extends React.Component {
                 </div>
 
                 <div id='products' className='home-developers home-section bk-intro'>
-                    <div className='home-intro-title'>Products</div>
+                    <div className='home-intro-title'>{i18n.products.title}</div>
 
-                    <div>We have developed some apps based on SDAG, let's have a try!
-                    <div className='home-intro-items' style={{ marginTop: 48, justifyContent: 'center' }}>
+                    <div>{i18n.products.desc}
+                        <div className='home-intro-items' style={{ marginTop: 48, justifyContent: 'center' }}>
                             <div style={{ marginRight: 96 }}>
                                 <img src={telescope} />
-                                <div className='home-intro-item-title'><a href="https://explorer.sdag.io">Explorer</a></div>
+                                <div className='home-intro-item-title'><a href="https://explorer.sdag.io">{i18n.products.explorer}</a></div>
                             </div>
                             <div>
                                 <img src={wallet} />
-                                <div className='home-intro-item-title'><a href="https://wallet.sdag.io">Wallet</a></div>
+                                <div className='home-intro-item-title'><a href="https://wallet.sdag.io">{i18n.products.wallet}</a></div>
                             </div>
                         </div>
                     </div>
